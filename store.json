@@ -18,8 +18,7 @@
     "Vibration: Off, Low, Medium or High, set in Recomp Options."
   ],
   "changelog": [
-    "Hosted by Deadcast: its menu and Recomp Store are Deadcast's own.",
-    "Needs Deadcast 1.2.0."
+    "Licence notices brought up to date."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }
