@@ -18,9 +18,8 @@
     "Vibration: Off, Low, Medium or High, set in Recomp Options."
   ],
   "changelog": [
-    "Vibration strength in Recomp Options, Medium by default.",
-    "1024x768 is the default resolution.",
-    "The Recomp Store fetches its own list."
+    "Hosted by Deadcast: its menu and Recomp Store are Deadcast's own.",
+    "Needs Deadcast 1.2.0."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }

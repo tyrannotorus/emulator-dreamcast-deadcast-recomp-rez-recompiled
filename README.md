@@ -1,7 +1,7 @@
 # Rez recomp module
 
-Rez (United Game Artists, 2001), recompiled for the TrimUI Brick. Deadcast plays it in place of its
-emulator when the game's Core is set to it.
+Rez (United Game Artists, 2001), recompiled for the TrimUI Brick. Deadcast 1.2.0 or newer hosts it when the game's
+Core is set to it: Deadcast's menu, Recomp Options and Recomp Store stay Deadcast's, and this module is the game.
 
 ## Supported Formats
 
@@ -37,8 +37,8 @@ From your own disc:
 
 ```
 git submodule update --init --recursive
-sdk/ui/toolchain/toolchain.sh
-sdk/ui/toolchain/devlibs.sh <adb serial>
+sdk/tools/toolchain/toolchain.sh
+sdk/tools/toolchain/devlibs.sh <adb serial>
 sdk/tools/build-module.sh "/path/to/Rez (Europe) (En,Ja,Fr,De,Es,It).chd"
 sdk/tools/pack-module.sh
 ```
