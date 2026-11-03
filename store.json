@@ -19,7 +19,7 @@
     "Controls: every button can be remapped, set in Options."
   ],
   "changelog": [
-    "Every button can be remapped: Options, with Core on Rez Recompiled, then Controls."
+    "Show FPS: only the number is drawn, with no box behind it."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }
