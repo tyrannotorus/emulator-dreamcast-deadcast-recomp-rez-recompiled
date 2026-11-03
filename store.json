@@ -14,10 +14,13 @@
   ],
   "features": [
     "60 fps: the stages are drawn at 60 frames a second, where the original draws them at 30.",
-    "Resolution: 640x480 or 1024x768 (the Brick's screen), set in Recomp Options."
+    "Resolution: 1024x768 (the Brick's screen) or 640x480, set in Recomp Options.",
+    "Vibration: Off, Low, Medium or High, set in Recomp Options."
   ],
   "changelog": [
-    "The new menu: the Recomp Store, and Core picks among a game's recomp modules."
+    "Vibration strength in Recomp Options, Medium by default.",
+    "1024x768 is the default resolution.",
+    "The Recomp Store fetches its own list."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }

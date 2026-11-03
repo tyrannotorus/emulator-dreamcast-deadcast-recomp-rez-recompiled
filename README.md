@@ -16,7 +16,8 @@ and BIN/CUE, are currently not supported.
 ## Features
 
 - **60 fps:** the stages are drawn at 60 frames a second, where the original draws them at 30.
-- **Resolution:** 640x480 or 1024x768 (the Brick's screen), set in Recomp Options.
+- **Resolution:** 1024x768 (the Brick's screen) or 640x480, set in Recomp Options.
+- **Vibration:** Off, Low, Medium or High, set in Recomp Options.
 
 ## Files
 

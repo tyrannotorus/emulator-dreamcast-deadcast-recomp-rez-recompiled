@@ -53,9 +53,7 @@ const dreamcomp::PortInfo kInfo = [] {
     }
     // The sound up to the stop, while the System is still alive.
     p.on_stop = [](dream::System&, dreamcomp::Settings&) { rez::native_sound_stop(); };
-    p.on_start = [](dream::System& sys, dreamcomp::Settings& settings) {
-        // frame_rate: 60 by default, 30 for the original's pacing.
-        rez::native_sys_frame_rate(static_cast<unsigned>(settings.get_int("frame_rate", 60)));
+    p.on_start = [](dream::System& sys, dreamcomp::Settings&) {
         rez::native_gfx_start(sys);
         rez::native_sys_start(sys);
         rez::native_snd_start(sys);

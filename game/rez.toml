@@ -962,5 +962,5 @@ extra = [# gdFs entry points Rez never calls (gdFsGetEof, gdFsSetTransMode, gdFs
 0x8C051950 = "g2_end@entry"
 0x8C075320 = "g2_chan_init@entry"
 0x8C0754D0 = "g2_protect@entry"
-# Rez's target for logic steps per drawn frame: at most 1 at 60 fps (src/native_sys.cpp).
+# Rez's target for logic steps per drawn frame: at most 1 (src/native_sys.cpp).
 0x8C0D06E4 = "set_frame_steps@entry"

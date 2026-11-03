@@ -19,15 +19,9 @@ namespace rez {
 namespace {
 
 dream::System* g_sys = nullptr;
-unsigned g_frame_rate = 60;
 std::uint64_t g_last = 0, g_pass = 0;
 
 }  // namespace
-
-void native_sys_frame_rate(unsigned fps) {
-    g_frame_rate = fps == 30 ? 30 : 60;
-    std::printf("rez: %u fps\n", g_frame_rate);
-}
 
 void native_sys_start(dream::System& sys) {
     g_sys = &sys;
@@ -78,10 +72,10 @@ bool vsync_wait_pass(dream::sh4::Ctx& c, dream::Memory& m) {
 
 // 0x8C0D06E4 (r4 = logic steps per drawn frame): `[0x8C28E080] = r4`, a leaf. Rez's logic
 // (0x8C084260) takes one step per VBlank tick (counted at [0x8C28E088]) and draws once every
-// [0x8C28E07C] steps, moved one a frame toward this target: 1 in the menus, 2 in the stages. At
-// 60 fps the hook stores at most 1, so every step is drawn; at 30 the setter runs as written.
+// [0x8C28E07C] steps, moved one a frame toward this target: 1 in the menus, 2 in the stages. The
+// hook stores at most 1, so every step is drawn: 60 fps throughout.
 bool set_frame_steps(dream::sh4::Ctx& c, dream::Memory& m) {
-    if (g_frame_rate != 60 || !g_sys)
+    if (!g_sys)
         return false;
     if (c.cycles >= c.next_event) {
         c.pc = 0x8C0D06E4u;
