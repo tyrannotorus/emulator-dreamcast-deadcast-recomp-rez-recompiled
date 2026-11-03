@@ -14,11 +14,12 @@
   ],
   "features": [
     "60 fps: the stages are drawn at 60 frames a second, where the original draws them at 30.",
-    "Resolution: 1024x768 (the Brick's screen) or 640x480, set in Recomp Options.",
-    "Vibration: Off, Low, Medium or High, set in Recomp Options."
+    "Resolution: 1024x768 (the Brick's screen) or 640x480, set in Options.",
+    "Vibration: Off, Low, Medium or High, set in Options.",
+    "Controls: every button can be remapped, set in Options."
   ],
   "changelog": [
-    "Licence notices brought up to date."
+    "Every button can be remapped: Options, with Core on Rez Recompiled, then Controls."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }

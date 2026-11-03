@@ -1,7 +1,7 @@
 # Rez recomp module
 
 Rez (United Game Artists, 2001), recompiled for the TrimUI Brick. Deadcast 1.2.0 or newer hosts it when the game's
-Core is set to it: Deadcast's menu, Recomp Options and Recomp Store stay Deadcast's, and this module is the game.
+Core is set to it: Deadcast's menu, Options and Recomp Store stay Deadcast's, and this module is the game.
 
 ## Supported Formats
 
@@ -16,8 +16,9 @@ and BIN/CUE, are currently not supported.
 ## Features
 
 - **60 fps:** the stages are drawn at 60 frames a second, where the original draws them at 30.
-- **Resolution:** 1024x768 (the Brick's screen) or 640x480, set in Recomp Options.
-- **Vibration:** Off, Low, Medium or High, set in Recomp Options.
+- **Resolution:** 1024x768 (the Brick's screen) or 640x480, set in Options.
+- **Vibration:** Off, Low, Medium or High, set in Options.
+- **Controls:** every button can be remapped, set in Options. `module.cfg` declares them; the SDK's README explains how.
 
 ## Files
 
