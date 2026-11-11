@@ -10,6 +10,16 @@
       "format": "CHD",
       "region": "Europe",
       "sha1": "01b7c1cc29a840b141a4ae713037eb1224fac233"
+    },
+    {
+      "format": "CHD",
+      "region": "Europe",
+      "sha1": "b02e62788394f59c34fcd07d19a7dd80b47fb76e"
+    },
+    {
+      "format": "CHD",
+      "region": "Europe",
+      "sha1": "66bfa7cf95348746f61e36a50c77050d380ca3aa"
     }
   ],
   "features": [
@@ -19,7 +29,7 @@
     "Controls: every button can be remapped, set in Options."
   ],
   "changelog": [
-    "Show FPS: only the number is drawn, with no box behind it."
+    "Two more CHDs of the European disc are supported: the same game data, with the audio warning track placed differently."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }

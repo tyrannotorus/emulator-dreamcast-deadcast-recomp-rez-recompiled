@@ -9,9 +9,12 @@ Core is set to it: Deadcast's menu, Options and Recomp Store stay Deadcast's, an
 |---|---|---|
 | Japan | CHD | `9711a0d0c21af3685672b9a42c72abf999fc7150` |
 | Europe | CHD | `01b7c1cc29a840b141a4ae713037eb1224fac233` |
+| Europe | CHD | `b02e62788394f59c34fcd07d19a7dd80b47fb76e` |
+| Europe | CHD | `66bfa7cf95348746f61e36a50c77050d380ca3aa` |
 
-The SHA-1 is the CHD header's, shown by `chdman info` as **SHA1**. Other images, including GDI, CDI
-and BIN/CUE, are currently not supported.
+The SHA-1 is the CHD header's, shown by `chdman info` as **SHA1**. The European disc's three CHDs hold the same
+game data; they differ only in where the audio warning track starts. Other images, including GDI, CDI and BIN/CUE,
+are currently not supported.
 
 ## Features
 
