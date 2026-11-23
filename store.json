@@ -26,10 +26,11 @@
     "60 fps: the stages are drawn at 60 frames a second, where the original draws them at 30.",
     "Resolution: 1024x768 (the Brick's screen) or 640x480, set in Options.",
     "Vibration: Off, Low, Medium or High, set in Options.",
+    "LEDs: they pulse with the game's vibration in the colour on screen, Off, Back Only or All, and their brightness, set in Options. Rez's own vibration (its Options) must be on.",
     "Controls: every button can be remapped, set in Options."
   ],
   "changelog": [
-    "Two more CHDs of the European disc are supported: the same game data, with the audio warning track placed differently."
+    "LEDs: they pulse with the game's vibration in the colour on screen. Off, Back Only or All, and their brightness (50% by default), set in Options. Rez's own vibration (its Options) must be on."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }

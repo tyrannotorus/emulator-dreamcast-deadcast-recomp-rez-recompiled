@@ -21,6 +21,9 @@ are currently not supported.
 - **60 fps:** the stages are drawn at 60 frames a second, where the original draws them at 30.
 - **Resolution:** 1024x768 (the Brick's screen) or 640x480, set in Options.
 - **Vibration:** Off, Low, Medium or High, set in Options.
+- **LEDs:** they pulse with the game's vibration, in the colour on screen: Off, Back Only (F1 and F2 stay off) or All,
+  and their brightness, set in Options. They follow the vibration Rez asks for, whatever the Vibration setting, so Rez's
+  own vibration must be on (its Options; a new save has it off).
 - **Controls:** every button can be remapped, set in Options. `module.cfg` declares them; the SDK's README explains how.
 
 ## Files
