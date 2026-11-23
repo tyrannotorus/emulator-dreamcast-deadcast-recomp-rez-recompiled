@@ -55,7 +55,7 @@ sdk/tools/pack-module.sh
 Owes much to [dream-recomp](https://github.com/phobos665/dream-recomp), [dreamcomp](https://github.com/cherryduck/dreamcomp)
 and [flycast](https://github.com/flyinghead/flycast).
 
-The LEDs were C0unt_Zer0's idea.
+Credit to C0unt_Zer0 for the thumping LEDs idea.
 
 ## Licence
 
