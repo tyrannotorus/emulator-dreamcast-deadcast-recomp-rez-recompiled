@@ -30,7 +30,8 @@
     "Controls: every button can be remapped, set in Options."
   ],
   "changelog": [
-    "LEDs: they pulse with the game's vibration in the colour on screen. Off, Back Only or All, and their brightness (50% by default), set in Options. Rez's own vibration (its Options) must be on."
+    "Options: Vibration, LEDs and LED Brightness say that Vibration must be ON in the in-game settings (shown by Deadcast 1.2.7 or newer).",
+    "Needs Deadcast 1.2.1 or newer."
   ],
   "repo": "https://github.com/tyrannotorus/emulator-dreamcast-deadcast-recomp-rez-recompiled"
 }

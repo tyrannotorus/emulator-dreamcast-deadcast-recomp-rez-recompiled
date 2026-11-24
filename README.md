@@ -1,6 +1,6 @@
 # Rez recomp module
 
-Rez (United Game Artists, 2001), recompiled for the TrimUI Brick. Deadcast 1.2.0 or newer hosts it when the game's
+Rez (United Game Artists, 2001), recompiled for the TrimUI Brick. Deadcast 1.2.1 or newer hosts it when the game's
 Core is set to it: Deadcast's menu, Options and Recomp Store stay Deadcast's, and this module is the game.
 
 ## Supported Formats
