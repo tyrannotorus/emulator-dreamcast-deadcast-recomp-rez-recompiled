@@ -6,6 +6,7 @@
 #include "dreamcomp/hook.h"
 #include "dreamcomp/port.h"
 #include "dreamcomp/settings.h"
+#include "leds.h"
 #include "native_dev.h"
 #include "native_gdfs.h"
 #include "native_gfx.h"
@@ -52,8 +53,12 @@ const dreamcomp::PortInfo kInfo = [] {
         p.hud.min_shared = 1u << 30;
     }
     // The sound up to the stop, while the System is still alive.
-    p.on_stop = [](dream::System&, dreamcomp::Settings&) { rez::native_sound_stop(); };
-    p.on_start = [](dream::System& sys, dreamcomp::Settings&) {
+    p.on_stop = [](dream::System&, dreamcomp::Settings&) {
+        rez::leds_stop();
+        rez::native_sound_stop();
+    };
+    p.on_setting = rez::leds_setting;
+    p.on_start = [](dream::System& sys, dreamcomp::Settings& settings) {
         rez::native_gfx_start(sys);
         rez::native_sys_start(sys);
         rez::native_snd_start(sys);
@@ -62,6 +67,7 @@ const dreamcomp::PortInfo kInfo = [] {
         rez::native_periph_start(sys);
         rez::native_sound_start(sys);
         rez::native_irq_start(sys);
+        rez::leds_start(sys, settings);
     };
     return p;
 }();

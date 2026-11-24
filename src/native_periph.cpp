@@ -4,6 +4,7 @@
 // take as many frames as on the bus, so the game sees the original timing. Saves go to the VMU
 // image, block for block as bu writes them. The rest of these libraries is guarded.
 #include "native_periph.h"
+#include "leds.h"
 #include "native_irq.h"
 
 #include <algorithm>
@@ -662,6 +663,7 @@ void deliver_client(unsigned u, const Client& cl) {
             const unsigned steps = inc ? static_cast<unsigned>(std::abs(inc)) * std::max(pos, neg) : 1u;
             ms = std::min(1000u * steps / freq, 5000u);
         }
+        leds_vibration(u / 6, strength, strength > 0.0f ? ms : 0u);
         g_sys->rumble(u / 6, strength, strength > 0.0f ? ms : 0u);
     }
 }
